@@ -22,4 +22,4 @@ git clone https://github.com/jahswant/WPFiPhoneCalculator.git
 
 ## Screenshots
 
-![iPhone Style Calculator Screenshot](./screenshots/screenshot_2024-10-04_132434.png)
+![iPhone Style Calculator Screenshot](./Screenshots/screenshot_2024-10-04_132434.png)
