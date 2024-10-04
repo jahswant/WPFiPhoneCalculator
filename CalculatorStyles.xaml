@@ -1,0 +1,158 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Style pour les boutons numériques (fond noir, texte blanc, arrondi, effet de survol) -->
+    <Style x:Key="NumberButtonStyle" TargetType="Button">
+        <!-- Taille de la police pour le texte du bouton -->
+        <Setter Property="FontSize" Value="32" />
+        <!-- Marge autour du bouton -->
+        <Setter Property="Margin" Value="5" />
+        <!-- Couleur de fond du bouton (gris foncé) -->
+        <Setter Property="Background" Value="#333333" />
+        <!-- Couleur du texte (blanc) -->
+        <Setter Property="Foreground" Value="White" />
+        <!-- Pas de bordure pour le bouton -->
+        <Setter Property="BorderThickness" Value="0" />
+        <!-- Rembourrage à l'intérieur du bouton pour espacer le contenu -->
+        <Setter Property="Padding" Value="20" />
+        <!-- Étendre le bouton pour remplir l'espace horizontal disponible -->
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <!-- Étendre le bouton pour remplir l'espace vertical disponible -->
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <!-- Modèle de contrôle personnalisé pour le bouton -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <!-- Bordure arrondie avec la couleur de fond spécifiée -->
+                    <Border Background="{TemplateBinding Background}" 
+                            CornerRadius="40" 
+                            Padding="{TemplateBinding Padding}">
+                        <!-- Afficher le contenu (texte du bouton) centré à l'intérieur du bouton -->
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          Content="{TemplateBinding Content}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <!-- Déclencheur pour l'effet de survol -->
+        <Style.Triggers>
+            <!-- Lorsque la souris est sur le bouton, changer la couleur de fond -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <!-- Changer la couleur de fond en gris plus clair lors du survol -->
+                <Setter Property="Background" Value="#555555" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Style pour les boutons de fonction (fond gris, texte noir, arrondi, effet de survol) -->
+    <Style x:Key="FunctionButtonStyle" TargetType="Button">
+        <!-- Taille de la police pour le texte du bouton -->
+        <Setter Property="FontSize" Value="32" />
+        <!-- Marge autour du bouton -->
+        <Setter Property="Margin" Value="5" />
+        <!-- Couleur de fond du bouton (gris clair) -->
+        <Setter Property="Background" Value="#A6A6A6" />
+        <!-- Couleur du texte (noir) -->
+        <Setter Property="Foreground" Value="Black" />
+        <!-- Pas de bordure pour le bouton -->
+        <Setter Property="BorderThickness" Value="0" />
+        <!-- Rembourrage à l'intérieur du bouton pour espacer le contenu -->
+        <Setter Property="Padding" Value="20" />
+        <!-- Étendre le bouton pour remplir l'espace horizontal disponible -->
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <!-- Étendre le bouton pour remplir l'espace vertical disponible -->
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <!-- Modèle de contrôle personnalisé pour le bouton -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <!-- Bordure arrondie avec la couleur de fond spécifiée -->
+                    <Border Background="{TemplateBinding Background}" 
+                            CornerRadius="40" 
+                            Padding="{TemplateBinding Padding}">
+                        <!-- Afficher le contenu (texte du bouton) centré à l'intérieur du bouton -->
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          Content="{TemplateBinding Content}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <!-- Déclencheur pour l'effet de survol -->
+        <Style.Triggers>
+            <!-- Lorsque la souris est sur le bouton, changer la couleur de fond -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <!-- Changer la couleur de fond en gris plus clair lors du survol -->
+                <Setter Property="Background" Value="#BFBFBF" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Style pour les boutons d'opérateurs (fond orange, texte blanc, arrondi, effet de survol) -->
+    <Style x:Key="OperatorButtonStyle" TargetType="Button">
+        <!-- Taille de la police pour le texte du bouton -->
+        <Setter Property="FontSize" Value="32" />
+        <!-- Marge autour du bouton -->
+        <Setter Property="Margin" Value="5" />
+        <!-- Couleur de fond du bouton (orange) -->
+        <Setter Property="Background" Value="#FF9500" />
+        <!-- Couleur du texte (blanc) -->
+        <Setter Property="Foreground" Value="White" />
+        <!-- Pas de bordure pour le bouton -->
+        <Setter Property="BorderThickness" Value="0" />
+        <!-- Rembourrage à l'intérieur du bouton pour espacer le contenu -->
+        <Setter Property="Padding" Value="20" />
+        <!-- Étendre le bouton pour remplir l'espace horizontal disponible -->
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <!-- Étendre le bouton pour remplir l'espace vertical disponible -->
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <!-- Modèle de contrôle personnalisé pour le bouton -->
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <!-- Bordure arrondie avec la couleur de fond spécifiée -->
+                    <Border Background="{TemplateBinding Background}" 
+                            CornerRadius="40" 
+                            Padding="{TemplateBinding Padding}">
+                        <!-- Afficher le contenu (texte du bouton) centré à l'intérieur du bouton -->
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          Content="{TemplateBinding Content}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <!-- Déclencheur pour l'effet de survol -->
+        <Style.Triggers>
+            <!-- Lorsque la souris est sur le bouton, changer la couleur de fond -->
+            <Trigger Property="IsMouseOver" Value="True">
+                <!-- Changer la couleur de fond en orange plus clair lors du survol -->
+                <Setter Property="Background" Value="#FFB74D" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Style pour les boutons d'opérateurs sélectionnés (pas d'effet de survol) -->
+    <Style x:Key="SelectedOperatorButtonStyle" TargetType="Button">
+        <Setter Property="FontSize" Value="32" />
+        <Setter Property="Margin" Value="5" />
+        <Setter Property="Background" Value="#FFB74D" />
+        <!-- Orange clair pour indiquer la sélection -->
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Padding" Value="20" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="VerticalAlignment" Value="Stretch" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" 
+                            CornerRadius="40" 
+                            Padding="{TemplateBinding Padding}">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"
+                                          Content="{TemplateBinding Content}" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
