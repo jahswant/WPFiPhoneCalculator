@@ -18,3 +18,7 @@ Clone the repository and open the solution in Visual Studio. Build and run the p
 
 ```bash
 git clone https://github.com/jahswant/WPFiPhoneCalculator.git
+
+## Screenshots
+
+![iPhone Style Calculator Screenshot](./screenshots/screenshot_2024-10-04_132434.png)
